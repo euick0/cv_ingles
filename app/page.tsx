@@ -159,7 +159,10 @@ export default function Home() {
           </motion.div>
 
           {/* Kitsilano Featured Work */}
-          <motion.div
+          <motion.a
+            href="https://reqal.app"
+            target="_blank"
+            rel="noopener noreferrer"
             className="md:col-span-8 bg-[#1A1A1A] border border-[#2A2A2A] rounded-[1rem] overflow-hidden flex flex-col relative min-h-[400px] group cursor-pointer"
             variants={scrollReveal}
           >
@@ -181,7 +184,7 @@ export default function Home() {
                 arrow_forward
               </span>
             </div>
-          </motion.div>
+          </motion.a>
         </motion.div>
 
         {/* Contact — scroll reveal with stagger */}
