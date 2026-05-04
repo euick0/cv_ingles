@@ -21,7 +21,7 @@ const heroItem = {
   show: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const },
   },
 };
 
@@ -30,7 +30,7 @@ const scrollReveal = {
   show: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1] as const },
   },
 };
 
@@ -58,7 +58,6 @@ export default function Home() {
             <a className="text-white border-b border-white pb-1" href="#about">About</a>
             <a className="text-gray-500 hover:text-white transition-colors duration-300" href="#contact">Contact</a>
           </div>
-        
         </div>
       </nav>
 
