@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { motion } from "motion/react";
+import portraitImg from "../public/portrait.jpeg";
+import reqalImg from "../public/image.png";
 
 const heroContainer = {
   hidden: {},
@@ -118,7 +120,7 @@ export default function Home() {
             variants={heroItem}
           >
             <Image
-              src="/portrait.jpeg"
+              src={portraitImg}
               alt="Eric Simões"
               fill
               className="object-cover object-top opacity-80 mix-blend-luminosity hover:mix-blend-normal transition-all duration-500"
@@ -167,7 +169,7 @@ export default function Home() {
             variants={scrollReveal}
           >
             <Image
-              src="/image.png"
+              src={reqalImg}
               alt="ReQal.app"
               fill
               loading="eager"
